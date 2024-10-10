@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	spec = "nbjorner.lazy",
+	spec = "cromigon.lazy",
 	change_detection = { notify = false },
 })
