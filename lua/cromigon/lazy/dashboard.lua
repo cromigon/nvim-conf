@@ -56,8 +56,6 @@ return {
       })
     end
 
-    local footer_color = "#2db300"
-
     -- colors
     local red = "#f43753"
     local blue = "#b3deef"
