@@ -1,3 +1,4 @@
+vim.g.lazyvim_check_order = false
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
