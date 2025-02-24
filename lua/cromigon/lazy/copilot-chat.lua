@@ -1,12 +1,13 @@
 return {
   "CopilotC-Nvim/CopilotChat.nvim",
-  branch = "canary",
+  branch = "main",
   cmd = "CopilotChat",
   opts = function()
     local user = vim.env.USER or "User"
     return {
       auto_insert_mode = true,
       show_help = true,
+      chat_autocomplete = true,
       question_header = "  " .. user .. " ",
       answer_header = "  Copilot ",
       window = {
@@ -51,7 +52,6 @@ return {
   },
   config = function(_, opts)
     local chat = require("CopilotChat")
-    require("CopilotChat.integrations.cmp").setup()
 
     vim.api.nvim_create_autocmd("BufEnter", {
       pattern = "copilot-chat",
